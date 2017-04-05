@@ -1,4 +1,4 @@
-FROM centos:6.8
+FROM centos:7.3.1611
 
 MAINTAINER Haesung Hwang <suhoag@naver.com>
 
