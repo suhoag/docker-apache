@@ -10,4 +10,4 @@
 
 - `centos7-apache2.2.32`,`centos7-apache2.2`,`c7-a2.2.32`,`7-2.2.32` [(centos7/2.2.32/Dockerfile)](https://github.com/suhoag/docker-centos-apache/blob/centos7/2.2.32/Dockerfile)
 
-- `latest`,`centos7`,`centos7-latest`,`centos7-apache2.4.25`,`centos7-apache2.4`,`c7-a2.4.25`,`7-2.4.25` [(centos6/2.4.25/Dockerfile)](https://github.com/suhoag/docker-centos-apache/blob/centos7/2.4.25/Dockerfile)
+- `latest`,`centos7`,`centos7-latest`,`centos7-apache2.4.25`,`centos7-apache2.4`,`c7-a2.4.25`,`7-2.4.25` [(centos7/2.4.25/Dockerfile)](https://github.com/suhoag/docker-centos-apache/blob/centos7/2.4.25/Dockerfile)
