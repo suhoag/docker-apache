@@ -18,6 +18,6 @@ RUN mkdir -p src \
         && make \
         && make install \
         && cd .. \
-        && rm -r src man manual
+        && rm -rf src man manual
 
 EXPOSE 80
