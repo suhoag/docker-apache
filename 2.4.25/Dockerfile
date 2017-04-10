@@ -2,6 +2,9 @@ FROM centos:5.11
 
 MAINTAINER Haesung Hwang <suhoag@naver.com>
 
+RUN rm -f /etc/yum.repos.d/* 
+ADD yum.repos.d/CentOS-Vault.repo /etc/yum.repos.d/CentOS-Vault.repo
+
 RUN yum -y update && yum -y install gcc make wget openssl-devel gcc-c++ && yum -y clean all
 
 ENV HTTPD_PREFIX /usr/local/apache
