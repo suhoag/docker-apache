@@ -12,7 +12,7 @@ WORKDIR "$HTTPD_PREFIX"
 # apr install
 RUN mkdir -p src \
     && cd src \
-    && wget -O apr.tar.gz http://mirror.navercorp.com/apache/apr/apr-1.5.2.tar.gz \
+    && wget -O apr.tar.gz "https://www.apache.org/dyn/closer.cgi?action=download&filename=apr/apr-1.5.2.tar.gz" \
     && mkdir apr \
     && tar -xvf apr.tar.gz -C apr --strip-components=1 \
     && cd apr \
@@ -21,7 +21,7 @@ RUN mkdir -p src \
     && cd ..
 
 # apr-util install
-RUN wget -O apr-util.tar.gz http://mirror.navercorp.com/apache/apr/apr-util-1.5.4.tar.gz \
+RUN wget -O apr-util.tar.gz "https://www.apache.org/dyn/closer.cgi?action=download&filename=apr/apr-util-1.5.4.tar.gz" \
     && mkdir apr-util \
     && tar -xvf apr-util.tar.gz -C apr-util --strip-components=1 \
     && cd apr-util \
@@ -39,7 +39,7 @@ RUN wget -O pcre.tar.gz ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pc
     && cd ..
 
 # httpd install
-RUN wget -O httpd.tar.gz http://mirror.navercorp.com/apache/httpd/httpd-2.4.25.tar.gz \
+RUN wget -O httpd.tar.gz "https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.25.tar.gz" \
     && mkdir httpd \
     && tar -xvf httpd.tar.gz -C httpd --strip-components=1 \
     && cd httpd \
