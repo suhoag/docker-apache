@@ -13,7 +13,7 @@ RUN mkdir -p "$HTTPD_PREFIX"
 WORKDIR "$HTTPD_PREFIX"
 
 RUN mkdir -p src \
-        && wget -O httpd.tar.gz "https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.2.32.tar.gz" \
+        && wget -O httpd.tar.gz "https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.2.32.tar.gz" --no-check-certificate \
         && tar -xvf httpd.tar.gz -C src --strip-components=1 \
         && rm -f httpd.tar.gz \
         && cd src \
